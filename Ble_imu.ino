@@ -45,7 +45,7 @@ void setup() {
   Serial.begin(115200);
   
   // Initialize I2C
-  Wire.begin(4, 5);  // SDA=GPIO4, SCL=GPIO5 for ESP32-C3
+  Wire.begin(D4, D5);  // SDA=GPIO4, SCL=GPIO5 for ESP32-C3
   
   // Initialize IMU
   initializeIMU();
